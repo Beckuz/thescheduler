@@ -316,7 +316,9 @@ class Schedule:
                 'groups': [group.asJSON() for group in self.groups],
                 'courses': [course.asJSON() for course in self.courses],
                 'teachers': self.teachers,
-                'sessions': [dict(course=str(s.course), time=s.time.isoformat(), room=s.room.name, teacher=s.teacher) for s in self._sessions or []]
+                'sessions': [dict(course=str(s.course), time=s.time.isoformat(),
+                                  end=(s.time+timedelta(hours=2)).isoformat(),
+                                  room=s.room.name, teacher=s.teacher) for s in self._sessions or []]
                 }, f, indent=2)
     
     def update(self):
@@ -430,7 +432,7 @@ class Schedule:
             return schedule
 
 if __name__ == '__main__':
-    cal = Calendar(date(2022, 1, 9), date(2022, 4, 3))
+    cal = Calendar(date(2022, 1, 9), date(2022, 5, 30))
     schedule = Schedule('default', cal)
     schedule.addClassRoom('Aura', 18)
     schedule.addClassRoom('Hermes', 20)

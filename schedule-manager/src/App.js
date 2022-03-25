@@ -27,11 +27,11 @@ const myEventsList = [
     title: "test2 event"}
 ];
 
-let sessions = (data.sessions.map(({course, time, room, teacher}) => {
+let sessions = (data.sessions.map(({course, time,end, room, teacher}) => {
         return {
             title: course,
             start: new Date(time),
-            end: new Date(time),
+            end: new Date(end),
             room: room,
             teacher: teacher
         }
@@ -56,7 +56,7 @@ export default function App() {
         style={{ height: 500 }}
 
       />
-      
+
 
     </div>
 
