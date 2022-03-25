@@ -1,1 +1,1 @@
-<meta http-equiv = "refresh" content = "2; url = beckuz.github.thescheduler.io/schedule-manager" />
+<meta http-equiv = "refresh" content = "2; url = https://beckuz.github.io/thescheduler.github.io/schedule-manager" />
