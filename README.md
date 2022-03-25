@@ -1,2 +1,1 @@
-# ProjectCourse2021
-This is the repository for the scheduling tool for Aboa Mare
+<meta http-equiv = "refresh" content = "2; url = /schedule-manager" />
