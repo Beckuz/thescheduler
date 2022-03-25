@@ -56,10 +56,7 @@ export default function App() {
         style={{ height: 500 }}
 
       />
-      {
-        sessions.map((d, id) =>
-        <li key={id}>{d.teacher }</li> )
-      }
+      
 
     </div>
 
