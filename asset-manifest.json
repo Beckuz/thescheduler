@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/thescheduler/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/thescheduler/static/js/main.3044e738.chunk.js",
-    "main.js.map": "/thescheduler/static/js/main.3044e738.chunk.js.map",
+    "main.js": "/thescheduler/static/js/main.7e62abfa.chunk.js",
+    "main.js.map": "/thescheduler/static/js/main.7e62abfa.chunk.js.map",
     "runtime-main.js": "/thescheduler/static/js/runtime-main.bbdcd480.js",
     "runtime-main.js.map": "/thescheduler/static/js/runtime-main.bbdcd480.js.map",
     "static/css/2.df525b9c.chunk.css": "/thescheduler/static/css/2.df525b9c.chunk.css",
-    "static/js/2.2127ced5.chunk.js": "/thescheduler/static/js/2.2127ced5.chunk.js",
-    "static/js/2.2127ced5.chunk.js.map": "/thescheduler/static/js/2.2127ced5.chunk.js.map",
+    "static/js/2.7caf4162.chunk.js": "/thescheduler/static/js/2.7caf4162.chunk.js",
+    "static/js/2.7caf4162.chunk.js.map": "/thescheduler/static/js/2.7caf4162.chunk.js.map",
     "static/js/3.12920f13.chunk.js": "/thescheduler/static/js/3.12920f13.chunk.js",
     "static/js/3.12920f13.chunk.js.map": "/thescheduler/static/js/3.12920f13.chunk.js.map",
     "index.html": "/thescheduler/index.html",
     "static/css/2.df525b9c.chunk.css.map": "/thescheduler/static/css/2.df525b9c.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/thescheduler/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.2127ced5.chunk.js.LICENSE.txt": "/thescheduler/static/js/2.2127ced5.chunk.js.LICENSE.txt"
+    "static/js/2.7caf4162.chunk.js.LICENSE.txt": "/thescheduler/static/js/2.7caf4162.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bbdcd480.js",
     "static/css/2.df525b9c.chunk.css",
-    "static/js/2.2127ced5.chunk.js",
+    "static/js/2.7caf4162.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.3044e738.chunk.js"
+    "static/js/main.7e62abfa.chunk.js"
   ]
 }
