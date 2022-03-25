@@ -4,7 +4,7 @@ import itertools
 import json
 
 from ortools.sat.python.cp_model import CpModel, CpSolver
-from ortools.util.sorted_interval_list import Domain
+##from ortools.util.sorted_interval_list import Domain
 
 
 class Day:
@@ -306,9 +306,9 @@ class Schedule:
         for session in self.getTeacherSchedule(teacher):
             print('%s\t%s\t%s' % (session.time, session.course.name, session.room.name))
 
-    def save(self, path = None):
+    def save(self):
         # Save schedule as JSON to file
-        with open('%s.json' % (self.name), 'w') as f:
+        with open('schedule-manager/src/%s.json' % (self.name), 'w') as f:
             json.dump({
                 'name': self.name,
                 'calendar': self.calendar.asJSON(),
@@ -430,7 +430,7 @@ class Schedule:
             return schedule
 
 if __name__ == '__main__':
-    cal = Calendar(date(2021, 8, 9), date(2021, 9, 3))
+    cal = Calendar(date(2022, 1, 9), date(2022, 4, 3))
     schedule = Schedule('default', cal)
     schedule.addClassRoom('Aura', 18)
     schedule.addClassRoom('Hermes', 20)
