@@ -6,7 +6,7 @@ import startOfWeek from "date-fns/startOfWeek";
 import getDay from "date-fns/getDay";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 //import "react-big-calendar/lib/sass/styles";
-import  data from "./default.json"
+import  data from "../default.json";
 
 const locales = {
   "en-US": require("date-fns/locale/en-US")
@@ -39,15 +39,10 @@ let sessions = (data.sessions.map(({course, time,end, room, teacher}) => {
 ))
 
 
+export default function Schedule() {
 
-  myEventsList.concat(
-  )
-
-
-
-export default function App() {
   return (
-    <div className="App">
+    <div className="Schedule">
       <Calendar
         localizer={localizer}
         events={sessions}
@@ -56,9 +51,9 @@ export default function App() {
         style={{ height: 500 }}
 
       />
-
-
     </div>
-
   );
 }
+
+
+
