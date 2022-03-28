@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom";
 import React from "react";
+import Login from "./Login/login";
 
 function Navigation() {
     return (
@@ -28,11 +29,6 @@ function Navigation() {
                                 </NavLink>
                             </li>
 
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/login">
-                                    Login
-                                </NavLink>
-                            </li>
                         </ul>
                     </div>
                 </div>
