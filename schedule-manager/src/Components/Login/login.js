@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./login.css";
-import ReactDOM from "react-dom";
 
 export default function Login({ setToken }) {
     const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [user, setUser] = useState("Admin");
 
 
     // Generate JSX code for error message
@@ -13,21 +13,26 @@ export default function Login({ setToken }) {
             <div className="error">{errorMessages.message}</div>
         );
 
-    const token = {
-        token: 'test123'
-    }
 
     // User Login info
     const database = [
         {
             username: "admin",
-            password: "admin"
+            password: "admin",
+            group: "Admin"
         },
         {
-            username: "Rickard",
-            password: "rickard"
+            username: "teacher",
+            password: "teacher",
+            group: "Teacher"
+        },
+        {
+            username: "novia1",
+            password: "novia1",
+            group: "Novia1Student"
         }
     ];
+    const token = {token: "test123"};
 
     const errors = {
         uname: "invalid username",
@@ -75,6 +80,11 @@ export default function Login({ setToken }) {
                     <input type="submit" />
                 </div>
             </form>
+            <div className="testText">
+                <p > Test username: admin</p>
+                <p> Test password: admin</p>
+            </div>
+
         </div>
     );
 

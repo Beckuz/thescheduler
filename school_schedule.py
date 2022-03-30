@@ -186,7 +186,7 @@ class Course:
         return [session for session in self._sessions if session.teacher == teacher]
 
 class Schedule:
-    Session = collections.namedtuple('Session', ('course', 'time', 'room', 'teacher'))
+    Session = collections.namedtuple('Session', ('course', 'group', 'time', 'room', 'teacher'))
 
     def __init__(self, name, calendar) -> None:
         self.name = name
@@ -249,7 +249,7 @@ class Schedule:
                 for ri, room in enumerate(self.classrooms):
                     for ti, teacher in enumerate(self.teachers):
                         if solver.Value(assignments[slot, gi, ci, ri, ti]):
-                            sessions.append(Schedule.Session(course, calendar.datetimeOf(slot), room, teacher))
+                            sessions.append(Schedule.Session(course, course.group, calendar.datetimeOf(slot), room, teacher))
         self._sessions = sessions
 
     def loadSessions(self, sessions):
@@ -316,7 +316,7 @@ class Schedule:
                 'groups': [group.asJSON() for group in self.groups],
                 'courses': [course.asJSON() for course in self.courses],
                 'teachers': self.teachers,
-                'sessions': [dict(course=str(s.course), time=s.time.isoformat(),
+                'sessions': [dict(course=str(s.course), group=str(s.group), time=s.time.isoformat(),
                                   end=(s.time+timedelta(hours=2)).isoformat(),
                                   room=s.room.name, teacher=s.teacher) for s in self._sessions or []]
                 }, f, indent=2)

@@ -1,6 +1,5 @@
 import {NavLink} from "react-router-dom";
 import React from "react";
-import Login from "./Login/login";
 
 function Navigation() {
     return (
@@ -11,7 +10,7 @@ function Navigation() {
                         The Scheduler
                     </NavLink>
                     <div>
-                        <p class="text-white"> The Scheduling Tool for
+                        <p className="text-white"> The Scheduling Tool for
                          Aboa Mare, Novia and Axxell
                         </p>
                     </div>
